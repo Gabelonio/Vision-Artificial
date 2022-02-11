@@ -33,7 +33,7 @@ def main():
             else:
                 print("Opción no valida")
                 quit()
-            calc(img,gray,filterHorizontal,filterVertical)
+            calc(img,gray,filterHorizontal,filterVertical,opt)
         elif opt==2:
             filterVertical = np.array([[-1], [0], [1]])
             filterHorizontal = np.array ([[-1, 0, 1]])
@@ -50,14 +50,14 @@ def main():
             else:
                 print("Opción no valida")
                 quit()
-            calc(img,gray,filterHorizontal,filterVertical)
+            calc(img,gray,filterHorizontal,filterVertical,opt)
         elif opt==3:
             break
         else:
             print("Opción no valida")
             quit()
 
-def calc(img,gray,filterHorizontal,filterVertical):
+def calc(img,gray,filterHorizontal,filterVertical, opt):
     b, g, r = cv2.split(img)
     img2 = cv2.merge([r, g, b])
     plt.figure(1)
