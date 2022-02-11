@@ -10,4 +10,4 @@ Integrantes:
 
 * Brayan Alexander Paredes Sánchez - 20171020106
 * Gabriel Esteban Castillo Ramírez - 20171020022
-* Juan Camilo Martínez López - 20171020
+* Juan Camilo Martínez López - 20171020074
