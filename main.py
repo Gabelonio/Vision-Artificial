@@ -69,17 +69,17 @@ def calc(img,gray,filterHorizontal,filterVertical):
 
     horizontalBorders = matrixToCovolve(gray, filterHorizontal)
 
-    # if opt == 1:
-    #     img = cv2.imread("mrincreible.jpeg")  # Lea la imagen aquí
-    #     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    #     # gray = np.array ([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-    # elif opt == 2:
-    #     img = cv2.imread("grupoimg.jpeg")  # Lea la imagen aquí
-    #     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    #     # gray = np.array ([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-    # else:
-    #     print("Opción no valida")
-    #     quit()
+    if opt == 1:
+        img = cv2.imread("mrincreible.jpeg")  # Lea la imagen aquí
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        # gray = np.array ([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    elif opt == 2:
+        img = cv2.imread("grupoimg.jpeg")  # Lea la imagen aquí
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        # gray = np.array ([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    else:
+        print("Opción no valida")
+        quit()
 
     verticalBorders = matrixToCovolve(gray, filterVertical)
 
